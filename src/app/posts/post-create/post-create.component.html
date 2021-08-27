@@ -1,6 +1,6 @@
 <p>The post create component!</p>
 
-<textarea name="" id="" cols="30" rows="6" [value]='newPost' #postInput></textarea>
+<textarea cols="30" rows="6" [(ngModel)]="postEnteredText"></textarea>
 <hr>
-<button (click)='onAddPost(postInput)'>Save Post</button>
+<button (click)='onAddPost()'>Save Post</button>
 <p>{{ newPost }}</p>
