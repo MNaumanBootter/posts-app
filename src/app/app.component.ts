@@ -9,9 +9,4 @@ import { Post } from './posts/post.model';
 export class AppComponent {
   title = 'practice-max-tutoral-MEAN';
 
-  storedPosts: Post[] = [];
-
-  onPostAdded(post){
-    this.storedPosts.push(post)
-  }
 }
