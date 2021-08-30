@@ -24,7 +24,7 @@ export class PostCreateComponent implements OnInit {
       return;
     }
     this.postsService.addPost(postForm.value.title, postForm.value.content)
-
+    postForm.resetForm();
 	}
 
 }
