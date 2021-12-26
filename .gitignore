@@ -1,6 +1,6 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# IDE configuration
+# user uploaded images
 /backend/images/*
 
 # IDE configuration
