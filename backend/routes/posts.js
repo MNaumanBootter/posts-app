@@ -1,7 +1,6 @@
 const express = require('express');
 const Post = require('../models/post');
 const multer = require('multer');
-const { createPipeDefinitionMap } = require('@angular/compiler/src/render3/partial/pipe');
 
 const router = express.Router();
 
@@ -40,7 +39,7 @@ router.post("", multer({storage: storage}).single("image"), (req, res, next) => 
       message: "Post added succesfully.",
       post: {
         ...createdPost,
-        id: createdPost.id
+        id: createdPost._id
       }
     });
   });
