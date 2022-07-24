@@ -1,0 +1,6 @@
+{
+  "env": {
+    "JWT_KEY": "secret_for_posts_app",
+    "MONGO_DB_URL": "mongodb://localhost:27017/posts-app"
+  }
+}

@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const postsRoutes = require('./routes/posts')
 const userRoutes = require('./routes/user')
 
-mongoose.connect('mongodb://localhost:27017/posts-app')
+mongoose.connect(process.env.MONGO_DB_URL)
   .then(() => {
     console.log("Connected to database.");
   })
